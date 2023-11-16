@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import { HeaderComponent } from './components/header/header.component';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
+import {HeaderComponent} from './components/header/header.component';
 
 
 @NgModule({
@@ -11,7 +11,8 @@ import { HeaderComponent } from './components/header/header.component';
     HeaderComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgOptimizedImage
   ]
 })
 export class SharedModule {
