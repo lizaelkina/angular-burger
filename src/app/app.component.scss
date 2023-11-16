@@ -1,5 +1,8 @@
+.root {
+  background: var(--background-alt);
+}
+
 .page {
-  background: #131316;
   min-width: 1280px;
   height: 100vh;
   display: flex;
