@@ -1,20 +1,32 @@
 <header class="header">
   <nav class="nav">
     <div class="nav__group nav__group_links">
-      <a class="link" href="#">
-        <img ngSrc="assets/icons/burger-icon-active.svg" height="24" width="24">
+      <a class="link"
+         routerLinkActive="active"
+         [routerLink]="['/']"
+         [routerLinkActiveOptions]="{exact: true}"
+      >
+        <img ngSrc="assets/icons/burger-icon.svg" height="24" width="24">
         <span class="text text_type_main-default">Конструктор</span>
       </a>
-      <a class="link" href="#">
+      <a class="link"
+         routerLinkActive="active"
+         [routerLink]="['/feed']"
+      >
         <img ngSrc="assets/icons/list-icon-active.svg" height="24" width="24">
         <span class="text text_type_main-default">Лента заказов</span>
       </a>
     </div>
-    <a class="nav__group nav__group_logo" href="#">
+    <a class="nav__group nav__group_logo"
+       [routerLink]="['/']"
+    >
       <img ngSrc="./assets/icons/logo.svg" alt="Логотип Stellar Burgers" height="50" width="290">
     </a>
     <div class="nav__group nav__group_profile">
-      <a class="link" href="#">
+      <a class="link"
+         routerLinkActive="active"
+         [routerLink]="['/profile']"
+      >
         <img ngSrc="assets/icons/profile-icon-active.svg" height="24" width="24">
         <span class="text text_type_main-default">Личный кабинет</span>
       </a>

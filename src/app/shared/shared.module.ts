@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {HeaderComponent} from './components/header/header.component';
+import {RouterLink, RouterLinkActive} from '@angular/router';
 
 
 @NgModule({
@@ -12,7 +13,9 @@ import {HeaderComponent} from './components/header/header.component';
   ],
   imports: [
     CommonModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    RouterLink,
+    RouterLinkActive
   ]
 })
 export class SharedModule {

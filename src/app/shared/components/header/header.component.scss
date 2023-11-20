@@ -53,7 +53,7 @@
   }
 }
 
-//.link:global(.active) {
-//  color: var(--text-primary-color);
-//  pointer-events: none;
-//}
+.active {
+  color: var(--text-primary-color);
+  pointer-events: none;
+}
