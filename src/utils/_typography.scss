@@ -1,33 +1,4 @@
-:root {
-  --background: #1c1c21;
-  --background-alt: #131316;
-  --background-element: #2f2f37;
-  --offset-base-variable: 2px;
-  --offset-base-size: 4px;
-  --top-constructor-item-border-radius: 88px 88px 40px 40px;
-  --bottom-constructor-item-border-radius: 40px 40px 88px 88px;
-
-  --common-border-radius: 64px;
-  --common-border-radius-s: 40px;
-  --text-primary-color: white;
-  --text-inactive-color: #8585AD;
-  --colors-interface-accent: #4c4cff;
-  --colors-interface-error: #E52B1A;
-  --colors-interface-success: #00cccc;
-  --colors-button-inactive: #3A3A55;
-  scrollbar-color: #2F2F37 #8585AD;
-  scrollbar-width: thin;
-
-  --common-transition: all .3s ease-in;
-}
-
-@-moz-document url-prefix() {
-  :root {
-    scrollbar-color: #8585AD #2F2F37;
-  }
-}
-
-/* Typography classes */
+// Typography
 
 .text {
   margin: 0;
@@ -88,21 +59,21 @@
 }
 
 .text_color_primary {
-  color: var(--text-primary-color)
+  color: var(--text-primary-color);
 }
 
 .text_color_inactive {
-  color: var(--text-inactive-color)
+  color: var(--text-inactive-color);
 }
 
 .text_color_accent {
-  color: var(--colors-interface-accent)
+  color: var(--colors-interface-accent);
 }
 
 .text_color_error {
-  color: var(--colors-interface-error)
+  color: var(--colors-interface-error);
 }
 
 .text_color_success {
-  color: var(--colors-interface-success)
+  color: var(--colors-interface-success);
 }

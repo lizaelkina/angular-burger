@@ -1,0 +1,21 @@
+:root {
+  --offset-base-variable: 2px;
+  --offset-base-size: 4px;
+  --top-constructor-item-border-radius: 88px 88px 40px 40px;
+  --bottom-constructor-item-border-radius: 40px 40px 88px 88px;
+
+  --common-border-radius: 64px;
+  --common-border-radius-s: 40px;
+  --common-transition: all .3s ease-in;
+
+  --background: #1c1c21;
+  --background-alt: #131316;
+  --background-element: #2f2f37;
+  --text-primary-color: white;
+  --text-inactive-color: #8585ad;
+  --colors-interface-accent: #4c4cff;
+  --colors-interface-error: #e52b1a;
+  --colors-interface-success: #00cccc;
+  --colors-button-inactive: #3a3a55;
+}
+
