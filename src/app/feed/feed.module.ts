@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { FeedRoutingModule } from './feed-routing.module';
-import { FeedPageComponent } from './feed-page.component';
+import {FeedRoutingModule} from './feed-routing.module';
+import {FeedPageComponent} from './feed-page.component';
 
 
 @NgModule({
@@ -14,4 +14,5 @@ import { FeedPageComponent } from './feed-page.component';
     FeedRoutingModule
   ]
 })
-export class FeedModule { }
+export class FeedModule {
+}
