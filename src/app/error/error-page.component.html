@@ -1,1 +1,19 @@
-<p>error works!</p>
+<section class="page">
+  <p class="text text_type_digits-large text_color_inactive">404</p>
+  <h2 class="text text_type_main-large text_color_inactive">Страница не найдена</h2>
+  <div class="container">
+    <span class="text text_type_main-default text_color_active">
+      К сожалению, данная страница не существует или временно недоступна.
+    </span>
+    <span class="text text_type_main-default text_color_active">
+      Вы можете повторить попытку позже, перейти
+      <button class="button button_type_secondary"
+              (click)="goBack()"
+      >назад</button>
+      или пейти на
+      <button class="button button_type_secondary"
+              routerLink="/"
+      >главную страницу</button>.
+    </span>
+  </div>
+</section>
