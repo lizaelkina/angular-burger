@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-
 import {FeedRoutingModule} from './feed.routing.module';
 import {FeedPageComponent} from './feed-page.component';
 

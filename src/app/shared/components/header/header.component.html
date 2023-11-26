@@ -20,7 +20,10 @@
     <a class="nav__group nav__group_logo"
        [routerLink]="['/']"
     >
-      <img ngSrc="/assets/images/logo.svg" alt="Логотип Stellar Burgers" height="50" width="290" priority="priority">
+      <img [ngSrc]="'/assets/images/logo.svg'" alt="Логотип Stellar Burgers"
+           height="50"
+           width="290"
+           priority="priority">
     </a>
     <div class="nav__group nav__group_profile">
       <a class="link"

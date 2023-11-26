@@ -6,14 +6,14 @@ import {MatIconModule} from '@angular/material/icon';
 import {HttpClientModule} from '@angular/common/http';
 import { IngredientDetailsComponent } from './components/ingredient-details/ingredient-details.component';
 
-
 @NgModule({
   declarations: [
     HeaderComponent,
     IngredientDetailsComponent
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    IngredientDetailsComponent
   ],
   imports: [
     CommonModule,
