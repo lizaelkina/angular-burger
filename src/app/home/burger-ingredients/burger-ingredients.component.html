@@ -1,9 +1,11 @@
 <section class="section">
   <h1 class="section__title text text_type_main-large">Соберите бургер</h1>
   <app-tab></app-tab>
-  <div class="scroll custom-scroll" *ngFor="let ingredient of ingredients">
-    <app-ingredient-group></app-ingredient-group>
-    <app-ingredient-group></app-ingredient-group>
-    <app-ingredient-group></app-ingredient-group>
+  <div class="scroll custom-scroll" *ngFor="let ingredient of ingredients$ | async">
+    <app-ingredient [ingredient]="ingredient"></app-ingredient>
+
+<!--    <app-ingredient-group></app-ingredient-group>-->
+<!--    <app-ingredient-group></app-ingredient-group>-->
+<!--    <app-ingredient-group></app-ingredient-group>-->
   </div>
 </section>

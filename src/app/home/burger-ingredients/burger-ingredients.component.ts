@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {BurgerIngredientsService, Ingredient} from './burger-ingredients.service';
+import {HomeService} from '../home.service';
+import {Observable} from 'rxjs';
+import {Ingredient} from '../../shared/models';
 
 @Component({
   selector: 'app-burger-ingredients',
@@ -8,21 +10,12 @@ import {BurgerIngredientsService, Ingredient} from './burger-ingredients.service
 })
 export class BurgerIngredientsComponent implements OnInit {
 
-  ingredients: Ingredient[] = [];
+  ingredients$!: Observable<Ingredient[]>;
 
-  constructor(private ingredientsService: BurgerIngredientsService) {
+  constructor(private ingredientsService: HomeService) {
   }
 
   ngOnInit() {
-    this.getIngredients();
-  }
-
-  getIngredients() {
-    this.ingredientsService.getIngredients()
-      .subscribe({
-        next: ingredients => {
-          this.ingredients = ingredients
-        }
-      })
+    this.ingredients$ = this.ingredientsService.getIngredients();
   }
 }
