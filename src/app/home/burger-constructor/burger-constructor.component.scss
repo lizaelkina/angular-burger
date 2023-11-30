@@ -1,0 +1,22 @@
+.section {
+  height: 100%;
+  width: 600px;
+  padding: 100px 0 40px 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout {
+  margin-top: 40px;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 40px;
+}
+
+.button {
+  max-width: 215px;
+  width: 100%;
+}
