@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {IngredientGroup} from '../burger-ingredients.models';
 
 @Component({
   selector: 'app-ingredient-group',
@@ -6,5 +7,7 @@ import {Component} from '@angular/core';
   styleUrls: ['./ingredient-group.component.scss']
 })
 export class IngredientGroupComponent {
+
+  @Input() group!: IngredientGroup
 
 }

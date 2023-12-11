@@ -4,7 +4,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {HomeRoutingModule} from './home.routing.module';
 import {HomePageComponent} from './home-page.component';
 import {BurgerIngredientsComponent} from './burger-ingredients/burger-ingredients.component';
-import {TabComponent} from './burger-ingredients/tab/tab.component';
+import {TabsComponent} from './burger-ingredients/tabs/tabs.component';
 import {IngredientGroupComponent} from './burger-ingredients/ingredient-group/ingredient-group.component';
 import {IngredientComponent} from './burger-ingredients/ingredient/ingredient.component';
 import {BurgerConstructorComponent} from './burger-constructor/burger-constructor.component';
@@ -17,7 +17,7 @@ import {DraggableIngredientComponent} from './burger-constructor/draggable-ingre
   declarations: [
     HomePageComponent,
     BurgerIngredientsComponent,
-    TabComponent,
+    TabsComponent,
     IngredientGroupComponent,
     IngredientComponent,
     BurgerConstructorComponent,
@@ -29,7 +29,7 @@ import {DraggableIngredientComponent} from './burger-constructor/draggable-ingre
     CommonModule,
     HomeRoutingModule,
     NgOptimizedImage,
-    MatIconModule
+    MatIconModule,
   ]
 })
 export class HomeModule {

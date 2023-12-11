@@ -1,0 +1,9 @@
+<aside class="tabs">
+  <div class="tab"
+       [class.tab_type_current]="group === selectedGroup"
+       *ngFor="let group of groups"
+       (click)="selectGroup(group)"
+  >
+    <span class="text text_type_main-default">{{group.name}}</span>
+  </div>
+</aside>
