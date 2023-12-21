@@ -1,0 +1,40 @@
+.page {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 604px 592px;
+  grid-template-rows: 80px 1fr;
+  grid-template-areas:
+    "text text"
+    "left right";
+  column-gap: 60px;
+  row-gap: 20px;
+
+  &__title {
+    grid-area: text;
+    margin-top: 40px;
+  }
+
+  &__left {
+    grid-area: left;
+    margin-bottom: 20px;
+  }
+
+  &__right {
+    grid-area: right;
+    margin-bottom: 20px;
+  }
+
+  &__empty {
+    display: flex;
+    opacity: 0.4;
+
+    &_left {
+      justify-content: center;
+    }
+  }
+}
+
+.scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+}

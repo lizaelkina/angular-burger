@@ -9,7 +9,7 @@ import {IngredientGroupComponent} from './burger-ingredients/ingredient-group/in
 import {IngredientComponent} from './burger-ingredients/ingredient/ingredient.component';
 import {BurgerConstructorComponent} from './burger-constructor/burger-constructor.component';
 import {BurgerPriceComponent} from './burger-constructor/burger-price/burger-price.component';
-import {BurgerTemplateComponent} from './burger-template/burger-template.component';
+import {BurgerTemplateComponent} from './burger-constructor/burger-template/burger-template.component';
 import {DraggableIngredientComponent} from './burger-constructor/draggable-ingredient/draggable-ingredient.component';
 
 
