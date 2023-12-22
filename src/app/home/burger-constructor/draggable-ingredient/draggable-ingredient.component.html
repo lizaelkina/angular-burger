@@ -1,19 +1,17 @@
-<ul class="list scroll custom-scroll">
-  <li class="item">
-    <mat-icon svgIcon="drag-icon"></mat-icon>
-    <div class="middle-element">
-      <div class="middle-element__row">
-        <img class="middle-element__image"
-             src="/assets/images/bun.png" alt="ingredient.name">
-        <span class="middle-element__text">Соус фирменный Space Sauce</span>
-        <div class="middle-element__price">
-          <span>80</span>
-          <mat-icon svgIcon="currency-icon"></mat-icon>
-        </div>
-        <div class="middle-element__action">
-          <mat-icon svgIcon="delete-icon"></mat-icon>
-        </div>
+<li class="item" *ngIf="ingredient">
+  <mat-icon svgIcon="drag-icon"></mat-icon>
+  <div class="middle-element">
+    <div class="middle-element__row">
+      <img class="middle-element__image"
+           [src]="ingredient.image" [alt]="ingredient.name">
+      <span class="middle-element__text">{{ingredient.name}}</span>
+      <div class="middle-element__price">
+        <span>{{ingredient.price}}</span>
+        <mat-icon svgIcon="currency-icon"></mat-icon>
+      </div>
+      <div class="middle-element__action">
+        <mat-icon svgIcon="delete-icon"></mat-icon>
       </div>
     </div>
-  </li>
-</ul>
+  </div>
+</li>

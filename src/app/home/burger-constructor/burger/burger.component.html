@@ -1,8 +1,8 @@
 <div class="bun-element bun-element__top" *ngIf="(bun$ | async) as bun; else emptyTop">
   <div class="bun-element__row">
     <img class="bun-element__image"
-         src="{{bun.image}}" alt="{{bun.name}}">
-    <span class="bun-element__info">{{bun.name}}</span>
+         [src]="bun.image" [alt]="bun.name">
+    <span class="bun-element__text">{{bun.name}}</span>
     <div class="bun-element__price">
       <span>{{(bun | asIngredient).price}}</span>
       <mat-icon svgIcon="currency-icon"></mat-icon>
@@ -12,14 +12,17 @@
     </div>
   </div>
 </div>
-
-<app-draggable-ingredient class="middle"></app-draggable-ingredient>
+<ul class="list scroll custom-scroll">
+  <app-draggable-ingredient *ngFor="let item of (middle$ | async)"
+                            [ingredient]="item">
+  </app-draggable-ingredient>
+</ul>
 
 <div class="bun-element bun-element__bottom" *ngIf="(bun$ | async) as bun; else emptyBottom">
   <div class="bun-element__row">
     <img class="bun-element__image"
-         src="{{bun.image}}" alt="{{bun.name}}">
-    <span class="bun-element__info">{{bun.name}}</span>
+         [src]="bun.image" [alt]="bun.name">
+    <span class="bun-element__text">{{bun.name}}</span>
     <div class="bun-element__price">
       <span>{{(bun | asIngredient).price}}</span>
       <mat-icon svgIcon="currency-icon"></mat-icon>
@@ -31,13 +34,13 @@
 </div>
 
 <ng-template #emptyTop>
-  <div class="bun-element bun-element__top">
-    <span class="bun-element__text">Перенесите сюда булку и начинку</span>
+  <div class="bun-element bun-element_empty bun-element__top">
+    <span>Перенесите сюда булку и начинку</span>
   </div>
 </ng-template>
 
 <ng-template #emptyBottom>
-  <div class="bun-element bun-element__bottom">
-    <span class="bun-element__text">Перенесите сюда булку и начинку</span>
+  <div class="bun-element bun-element_empty bun-element__bottom">
+    <span>Перенесите сюда булку и начинку</span>
   </div>
 </ng-template>

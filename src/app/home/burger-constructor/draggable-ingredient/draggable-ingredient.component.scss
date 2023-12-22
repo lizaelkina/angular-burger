@@ -1,13 +1,5 @@
-.list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .item {
+  max-height: 80px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -21,8 +13,7 @@
   max-width: 536px;
   width: 100%;
   min-height: 80px;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
   background: var(--background-element);
   border-radius: var(--common-border-radius-s);
   color: #f2f2f3;
@@ -43,14 +34,14 @@
 
   &__text {
     flex-grow: 1;
-    display: flex;
+    display: inline-flex;
     text-align: left;
     align-items: center;
     line-height: 24px;
   }
 
   &__price {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 9px;
     font-family: Iceland, arial, helvetica, sans-serif;
@@ -63,13 +54,8 @@
 
   &__action {
     padding-right: 8px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     cursor: pointer;
   }
-}
-
-.scroll {
-  overflow-y: auto;
-  overflow-x: hidden;
 }

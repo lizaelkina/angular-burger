@@ -1,10 +1,7 @@
 <li class="card link" *ngIf="ingredient"
     (click)="burgerConstructorService.addIngredient(ingredient)">
   <img class="card__image"
-       src="{{ingredient.image}}"
-       alt="{{ingredient.name}}"
-       height="120"
-       width="240">
+       src="{{ingredient.image}}" alt="{{ingredient.name}}">
   <div class="card__price">
     <span class="text text_type_digits-default">{{ingredient.price}}</span>
     <mat-icon svgIcon="currency-icon"></mat-icon>
