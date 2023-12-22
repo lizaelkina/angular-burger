@@ -8,7 +8,6 @@ import {TabsComponent} from './burger-ingredients/tabs/tabs.component';
 import {IngredientGroupComponent} from './burger-ingredients/ingredient-group/ingredient-group.component';
 import {IngredientComponent} from './burger-ingredients/ingredient/ingredient.component';
 import {BurgerConstructorComponent} from './burger-constructor/burger-constructor.component';
-import {BurgerPriceComponent} from './burger-constructor/burger-price/burger-price.component';
 import {BurgerComponent} from './burger-constructor/burger/burger.component';
 import {MiddleIngredientComponent} from './burger-constructor/middle-ingredient/middle-ingredient.component';
 import {SharedModule} from '../shared/shared.module';
@@ -22,7 +21,6 @@ import {SharedModule} from '../shared/shared.module';
     IngredientGroupComponent,
     IngredientComponent,
     BurgerConstructorComponent,
-    BurgerPriceComponent,
     BurgerComponent,
     MiddleIngredientComponent
   ],

@@ -31,4 +31,5 @@ export class BurgerConstructorService {
     this.totalPrice = (this.bun?.price ?? 0) * 2 + this.middle.reduce((sum, ingredient) => sum + ingredient.price, 0);
     this.totalPriceSubject.next(this.totalPrice);
   }
+
 }

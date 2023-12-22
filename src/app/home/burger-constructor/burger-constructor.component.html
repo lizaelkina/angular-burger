@@ -1,7 +1,13 @@
 <section class="section" aria-label="Конструктор бургера">
   <app-burger class="order"></app-burger>
   <div class="checkout">
-    <app-burger-price></app-burger-price>
-    <Button class="button button_type_primary button_size_large">Оформить заказ</Button>
+    <div class="container">
+      <span class="text text_type_digits-medium">{{totalPrice$ | async}}</span>
+      <mat-icon svgIcon="currency-icon"></mat-icon>
+    </div>
+    <Button class="button button_type_primary button_size_large"
+            [disabled]="(totalPrice$ | async) === 0">
+      Оформить заказ
+    </Button>
   </div>
 </section>
