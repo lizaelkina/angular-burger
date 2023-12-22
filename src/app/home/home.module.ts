@@ -9,8 +9,9 @@ import {IngredientGroupComponent} from './burger-ingredients/ingredient-group/in
 import {IngredientComponent} from './burger-ingredients/ingredient/ingredient.component';
 import {BurgerConstructorComponent} from './burger-constructor/burger-constructor.component';
 import {BurgerPriceComponent} from './burger-constructor/burger-price/burger-price.component';
-import {BurgerComponent} from './burger-constructor/burger-template/burger.component';
+import {BurgerComponent} from './burger-constructor/burger/burger.component';
 import {DraggableIngredientComponent} from './burger-constructor/draggable-ingredient/draggable-ingredient.component';
+import {SharedModule} from '../shared/shared.module';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import {DraggableIngredientComponent} from './burger-constructor/draggable-ingre
     HomeRoutingModule,
     NgOptimizedImage,
     MatIconModule,
+    SharedModule,
   ]
 })
 export class HomeModule {

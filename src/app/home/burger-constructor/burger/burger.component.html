@@ -1,13 +1,13 @@
-<div class="constructor-element constructor-element__top" *ngIf="burgerConstructorService.bun">
+<div class="constructor-element constructor-element__top" *ngIf="(bun$ | async) as bun; else emptyTop">
   <div class="constructor-element__row">
     <img class="constructor-element__image"
-         [ngSrc]="burgerConstructorService.bun.image" alt=ingredient.name
+         [ngSrc]="bun.image" alt=ingredient.name
          height="120"
          width="240"
     >
-    <span class="constructor-element__text">{{burgerConstructorService.bun.name}}</span>
+    <span class="constructor-element__text">{{bun.name}}</span>
     <div class="constructor-element__price">
-      <span>{{burgerConstructorService.bun.price}}</span>
+      <span>{{(bun | asIngredient).price}}</span>
       <mat-icon svgIcon="currency-icon"></mat-icon>
     </div>
     <div class="constructor-element__action">
@@ -16,9 +16,6 @@
   </div>
 </div>
 
-<div class="template template__top" *ngIf="!burgerConstructorService.bun">
-  <span class="template__text">Перенесите сюда булку и начинку</span>
-</div>
 <app-draggable-ingredient class="order"></app-draggable-ingredient>
 <div class="template template__bottom">
   <span class="template__text">Перенесите сюда булку и начинку</span>
@@ -41,3 +38,11 @@
 <!--    </div>-->
 <!--  </div>-->
 <!--</div>-->
+
+
+
+<ng-template #emptyTop>
+  <div class="template template__top">
+    <span class="template__text">Перенесите сюда булку и начинку</span>
+  </div>
+</ng-template>

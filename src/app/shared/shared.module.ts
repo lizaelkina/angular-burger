@@ -5,15 +5,18 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
 import {MatIconModule} from '@angular/material/icon';
 import {HttpClientModule} from '@angular/common/http';
 import {IngredientDetailsComponent} from './components/ingredient-details/ingredient-details.component';
+import { AsIngredientPipe } from './pipes/as-ingredient.pipe';
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    IngredientDetailsComponent
+    IngredientDetailsComponent,
+    AsIngredientPipe
   ],
   exports: [
     HeaderComponent,
-    IngredientDetailsComponent
+    IngredientDetailsComponent,
+    AsIngredientPipe
   ],
   imports: [
     CommonModule,
