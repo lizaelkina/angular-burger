@@ -14,25 +14,21 @@
   cursor: pointer;
 }
 
-.constructor-element {
-  display: flex;
-  justify-content: center;
-  margin-left: 32px;
+.middle-element {
+  margin: 0 8px 0;
   box-sizing: border-box;
   padding: 16px 24px;
   max-width: 536px;
   width: 100%;
   min-height: 80px;
+  display: flex;
+  justify-content: center;
   background: var(--background-element);
   border-radius: var(--common-border-radius-s);
   color: #f2f2f3;
   font-family: Jet Brains Mono, arial, helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
-
-  &__center {
-    margin: 0 8px 0;
-  }
 
   &__row {
     display: flex;

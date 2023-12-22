@@ -9,7 +9,8 @@ import {DomSanitizer} from '@angular/platform-browser';
 })
 export class OrderPriceComponent {
 
-  constructor(private readonly iconRegistry: MatIconRegistry, private readonly sanitizer: DomSanitizer) {
+  constructor(private readonly iconRegistry: MatIconRegistry,
+              private readonly sanitizer: DomSanitizer) {
     this.iconRegistry.addSvgIcon('currency-icon', this.sanitizer.bypassSecurityTrustResourceUrl('assets/images/icons/currency-icon.svg'));
   }
 }

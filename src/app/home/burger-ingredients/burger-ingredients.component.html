@@ -3,9 +3,8 @@
   <app-tabs [groups]="ingredientGroups"></app-tabs>
   <div class="scroll custom-scroll">
     <app-ingredient-group
-        *ngFor="let group of ingredientGroups"
-        [group]="group"
-    >
+      *ngFor="let group of ingredientGroups"
+      [group]="group">
     </app-ingredient-group>
   </div>
 </section>

@@ -1,48 +1,43 @@
-<div class="constructor-element constructor-element__top" *ngIf="(bun$ | async) as bun; else emptyTop">
-  <div class="constructor-element__row">
-    <img class="constructor-element__image"
-         [ngSrc]="bun.image" alt=ingredient.name
-         height="120"
-         width="240"
-    >
-    <span class="constructor-element__text">{{bun.name}}</span>
-    <div class="constructor-element__price">
+<div class="bun-element bun-element__top" *ngIf="(bun$ | async) as bun; else emptyTop">
+  <div class="bun-element__row">
+    <img class="bun-element__image"
+         src="{{bun.image}}" alt="{{bun.name}}">
+    <span class="bun-element__info">{{bun.name}}</span>
+    <div class="bun-element__price">
       <span>{{(bun | asIngredient).price}}</span>
       <mat-icon svgIcon="currency-icon"></mat-icon>
     </div>
-    <div class="constructor-element__action">
+    <div class="bun-element__action">
       <mat-icon svgIcon="lock-icon_inactive"></mat-icon>
     </div>
   </div>
 </div>
 
-<app-draggable-ingredient class="order"></app-draggable-ingredient>
-<div class="template template__bottom">
-  <span class="template__text">Перенесите сюда булку и начинку</span>
+<app-draggable-ingredient class="middle"></app-draggable-ingredient>
+
+<div class="bun-element bun-element__bottom" *ngIf="(bun$ | async) as bun; else emptyBottom">
+  <div class="bun-element__row">
+    <img class="bun-element__image"
+         src="{{bun.image}}" alt="{{bun.name}}">
+    <span class="bun-element__info">{{bun.name}}</span>
+    <div class="bun-element__price">
+      <span>{{(bun | asIngredient).price}}</span>
+      <mat-icon svgIcon="currency-icon"></mat-icon>
+    </div>
+    <div class="bun-element__action">
+      <mat-icon svgIcon="lock-icon_inactive"></mat-icon>
+    </div>
+  </div>
 </div>
 
-<!--<div class="constructor-element constructor-element__bottom">-->
-<!--  <div class="constructor-element__row">-->
-<!--    <img class="constructor-element__image"-->
-<!--         [ngSrc]="'/assets/images/bun.png'" alt=ingredient.name-->
-<!--         height="120"-->
-<!--         width="240"-->
-<!--    >-->
-<!--    <span class="constructor-element__text">Соус фирменный Space Sauce</span>-->
-<!--    <div class="constructor-element__price">-->
-<!--      <span>80</span>-->
-<!--      <mat-icon svgIcon="currency-icon"></mat-icon>-->
-<!--    </div>-->
-<!--    <div class="constructor-element__action">-->
-<!--      <mat-icon svgIcon="lock-icon_inactive"></mat-icon>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-
-
-
 <ng-template #emptyTop>
-  <div class="template template__top">
-    <span class="template__text">Перенесите сюда булку и начинку</span>
+  <div class="bun-element bun-element__top">
+    <span class="bun-element__text">Перенесите сюда булку и начинку</span>
+  </div>
+</ng-template>
+
+<ng-template #emptyBottom>
+  <div class="bun-element bun-element__bottom">
+    <span class="bun-element__text">Перенесите сюда булку и начинку</span>
   </div>
 </ng-template>

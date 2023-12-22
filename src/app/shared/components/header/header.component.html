@@ -4,32 +4,25 @@
       <a class="link"
          routerLinkActive="active"
          [routerLink]="['/']"
-         [routerLinkActiveOptions]="{exact: true}"
-      >
+         [routerLinkActiveOptions]="{exact: true}">
         <mat-icon svgIcon="burger-icon"></mat-icon>
         <span class="text text_type_main-default">Конструктор</span>
       </a>
       <a class="link"
          routerLinkActive="active"
-         [routerLink]="['/feed']"
-      >
+         [routerLink]="['/feed']">
         <mat-icon svgIcon="list-icon"></mat-icon>
         <span class="text text_type_main-default">Лента заказов</span>
       </a>
     </div>
     <a class="nav__group nav__group_logo"
-       [routerLink]="['/']"
-    >
-      <img [ngSrc]="'/assets/images/logo.svg'" alt="Логотип Stellar Burgers"
-           height="50"
-           width="290"
-           priority="priority">
+       [routerLink]="['/']">
+      <img src="/assets/images/logo.svg" alt="Логотип Stellar Burgers">
     </a>
     <div class="nav__group nav__group_profile">
       <a class="link"
          routerLinkActive="active"
-         [routerLink]="['/profile']"
-      >
+         [routerLink]="['/profile']">
         <mat-icon svgIcon="profile-icon"></mat-icon>
         <span class="text text_type_main-default">Личный кабинет</span>
       </a>

@@ -1,8 +1,7 @@
 <h2 [id]="group.ingredientType" class="text text_type_main-medium">{{group.name}}</h2>
 <ul class="group">
   <app-ingredient
-      *ngFor="let item of group.ingredients"
-      [ingredient]="item"
-  >
+    *ngFor="let item of group.ingredients"
+    [ingredient]="item">
   </app-ingredient>
 </ul>
