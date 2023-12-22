@@ -4,11 +4,11 @@ import {DomSanitizer} from '@angular/platform-browser';
 import {Ingredient} from '../../../shared/models';
 
 @Component({
-  selector: 'app-draggable-ingredient',
-  templateUrl: './draggable-ingredient.component.html',
-  styleUrls: ['./draggable-ingredient.component.scss']
+  selector: 'app-middle-ingredient',
+  templateUrl: './middle-ingredient.component.html',
+  styleUrls: ['./middle-ingredient.component.scss']
 })
-export class DraggableIngredientComponent {
+export class MiddleIngredientComponent {
 
   @Input() ingredient?: Ingredient;
 

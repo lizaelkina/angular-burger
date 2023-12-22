@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {Location} from '@angular/common';
 
 @Component({
-  selector: 'app-error',
+  selector: 'app-error-page',
   templateUrl: './error-page.component.html',
   styleUrls: ['./error-page.component.scss']
 })

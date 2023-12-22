@@ -2,7 +2,7 @@
   <div class="bun-element__row">
     <img class="bun-element__image"
          [src]="bun.image" [alt]="bun.name">
-    <span class="bun-element__text">{{bun.name}}</span>
+    <span class="bun-element__text">{{bun.name + ' (верх)'}}</span>
     <div class="bun-element__price">
       <span>{{(bun | asIngredient).price}}</span>
       <mat-icon svgIcon="currency-icon"></mat-icon>
@@ -13,16 +13,16 @@
   </div>
 </div>
 <ul class="list scroll custom-scroll">
-  <app-draggable-ingredient *ngFor="let item of (middle$ | async)"
+  <app-middle-ingredient *ngFor="let item of (middle$ | async)"
                             [ingredient]="item">
-  </app-draggable-ingredient>
+  </app-middle-ingredient>
 </ul>
 
 <div class="bun-element bun-element__bottom" *ngIf="(bun$ | async) as bun; else emptyBottom">
   <div class="bun-element__row">
     <img class="bun-element__image"
          [src]="bun.image" [alt]="bun.name">
-    <span class="bun-element__text">{{bun.name}}</span>
+    <span class="bun-element__text">{{bun.name + ' (низ)'}}</span>
     <div class="bun-element__price">
       <span>{{(bun | asIngredient).price}}</span>
       <mat-icon svgIcon="currency-icon"></mat-icon>

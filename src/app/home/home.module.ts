@@ -10,7 +10,7 @@ import {IngredientComponent} from './burger-ingredients/ingredient/ingredient.co
 import {BurgerConstructorComponent} from './burger-constructor/burger-constructor.component';
 import {BurgerPriceComponent} from './burger-constructor/burger-price/burger-price.component';
 import {BurgerComponent} from './burger-constructor/burger/burger.component';
-import {DraggableIngredientComponent} from './burger-constructor/draggable-ingredient/draggable-ingredient.component';
+import {MiddleIngredientComponent} from './burger-constructor/middle-ingredient/middle-ingredient.component';
 import {SharedModule} from '../shared/shared.module';
 
 
@@ -24,7 +24,7 @@ import {SharedModule} from '../shared/shared.module';
     BurgerConstructorComponent,
     BurgerPriceComponent,
     BurgerComponent,
-    DraggableIngredientComponent
+    MiddleIngredientComponent
   ],
   imports: [
     CommonModule,
