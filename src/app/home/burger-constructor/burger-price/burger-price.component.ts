@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {MatIconRegistry} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
+import {BurgerConstructorService} from '../burger-constructor.service';
 
 @Component({
   selector: 'app-burger-price',
@@ -8,7 +9,9 @@ import {DomSanitizer} from '@angular/platform-browser';
   styleUrls: ['./burger-price.component.scss']
 })
 export class BurgerPriceComponent {
-  constructor(private readonly iconRegistry: MatIconRegistry, private readonly sanitizer: DomSanitizer) {
+  constructor( public burgerConstructorService: BurgerConstructorService,
+               private readonly iconRegistry: MatIconRegistry,
+               private readonly sanitizer: DomSanitizer) {
     this.iconRegistry.addSvgIcon('currency-icon', this.sanitizer.bypassSecurityTrustResourceUrl('assets/images/icons/currency-icon.svg'));
   }
 }

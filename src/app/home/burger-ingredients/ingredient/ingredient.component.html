@@ -1,4 +1,5 @@
-<li class="card link" *ngIf="ingredient">
+<li class="card link" *ngIf="ingredient"
+    (click)="burgerConstructorService.addIngredient(ingredient)">
   <img class="card__image"
        [ngSrc]="ingredient.image"
        alt="{{ingredient.name}}"
